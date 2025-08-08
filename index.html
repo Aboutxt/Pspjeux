@@ -1,0 +1,122 @@
+<!-- Projet : pspjeux - Site dynamique pour ROM PSP -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSPJeux - ROMs PSP Gratuits</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background-color: #d62828;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .search {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .search input {
+      width: 80%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    #romList {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .rom-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+
+    .rom-card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .rom-card h3 {
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PSPJeux</h1>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#roms">ROM PSP</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="search">
+      <input type="text" id="searchInput" placeholder="Rechercher un jeu PSP...">
+    </section>
+
+    <section id="romList">
+      <div class="rom-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/4e/DBZ_Shin_Budokai_Coverart.png" alt="Dragon Ball Z: Shin Budokai">
+        <h3>Dragon Ball Z: Shin Budokai</h3>
+        <p><a href="#">Télécharger</a></p>
+      </div>
+      <div class="rom-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f3/God_of_War_Chains_of_Olympus.jpg" alt="God of War: Chains of Olympus">
+        <h3>God of War: Chains of Olympus</h3>
+        <p><a href="#">Télécharger</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PSPJeux. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
